@@ -52,7 +52,7 @@ var server = http.createServer(function (request, response) {
     response.write(`你访问的页面不存在`)
     response.end()
   }
-
+  //准备重新写一遍
   /******** 代码结束，下面不要看 ************/
 })
 
