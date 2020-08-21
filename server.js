@@ -42,6 +42,7 @@ var server = http.createServer(function (request, response) {
     `)
     response.end()
   } else if (path === '/style.css') {
+    //响应的四个部分
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
     response.write(`h1{color: red;}`)
@@ -52,7 +53,7 @@ var server = http.createServer(function (request, response) {
     response.write(`你访问的页面不存在`)
     response.end()
   }
-  //准备重新写一遍
+
   /******** 代码结束，下面不要看 ************/
 })
 
