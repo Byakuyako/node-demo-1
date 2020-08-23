@@ -8,7 +8,7 @@ if (!port) {
   process.exit(1)
 }
 
-var server = http.createServer(function (request, response) {
+  var server = http.createServer(function (request, response) {
   var parsedUrl = url.parse(request.url, true)
   var pathWithQuery = request.url
   var queryString = ''
@@ -42,7 +42,7 @@ var server = http.createServer(function (request, response) {
     `)
     response.end()
   } else if (path === '/style.css') {
-    //响应的四个部分
+    //响应的四个部分, 必须有Header设置, write 内容, 和 end()方法来结束响应
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
     response.write(`h1{color: red;}`)
