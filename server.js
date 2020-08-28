@@ -45,6 +45,7 @@ if (!port) {
     //响应的四个部分, 必须有Header设置, write 内容, 和 end()方法来结束响应
     //刷 codecademy
     //input range
+    //Form Validation
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
     response.write(`h1{color: red;}`)
