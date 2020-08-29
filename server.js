@@ -46,6 +46,7 @@ if (!port) {
     //刷 codecademy
     //input range
     //Form Validation
+    //vuex状态管理
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
     response.write(`h1{color: red;}`)
